@@ -1,12 +1,45 @@
 {% extends "base.html.twig" %}
 {% block body %}
+<div class="img-text">
 <img src="{{ asset('build/images/grape.jpg') }}" alt="raisin" class="img-landing">
+<p class="text-landing">Depuis 1992 nous cherchons l'amélioration. Aujourd'hui, que ce soit pour la cuisine ou un dîner, 
+La Villageoise vous offres un moment d'exception. Partez à la découverte de notre gamme, Rouge, Blanc ou Rosé</p>
+</div>
+<!-- Pour le rouge -->
+<div class="wine" data-aos="fade-up"
+data-aos-delay="600"
+data-aos-duration="3000">
+    <h2>Le Rouge</h2>
+    <img src="{{ asset('build/images/rouge.webp') }}" alt="vin rouge" class="rouge-landing">
+    <div class="overlay-button">
+        <button class="rouge-button">Découvrir Le Rouge</button>
+    </div>
+</div>
+<!-- Fin du rouge -->
 
-<p>
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur dolorum incidunt, corporis nulla eveniet ea in recusandae error natus doloremque pariatur, similique iure laudantium? Ipsum quia quaerat eos adipisci velit.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus odit nihil ducimus quas aliquam, eum ad dolor doloremque exercitationem, optio ut cum quisquam vel harum inventore veniam perferendis autem quidem.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias assumenda cum similique, quod expedita incidunt quam ipsa quis illo molestias nam impedit nobis suscipit error. Corrupti doloribus voluptatibus labore amet!
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam libero tempora debitis aliquid quisquam similique adipisci nihil repudiandae, a placeat odit quod distinctio, ipsa ipsam! Perferendis dicta nobis id saepe!
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore maxime deserunt voluptate eveniet voluptatum. Nobis eaque magni distinctio, debitis voluptas ratione error laudantium? Aspernatur ex maxime ipsa quos. Adipisci, asperiores!
-</p>
+<!-- Pour le blanc -->
+<div class="wine" data-aos="fade-up"
+data-aos-delay="600"
+data-aos-duration="3000">
+    <h2>Le Blanc</h2>
+    <img src="{{ asset('build/images/blanc.jpg') }}" alt="vin blanc" class="rouge-landing">
+        <div class="overlay-button">
+            <button class="rouge-button">Découvrir Le Blanc</button>
+        </div>
+</div>
+<!-- Fin du blanc -->
+
+<!-- Pour le rosé -->
+<div class="wine" data-aos="fade-up"
+data-aos-delay="600"
+data-aos-duration="3000">
+    <h2>Le Rosé</h2>
+    <img src="{{ asset('build/images/rose.webp') }}" alt="rosé pamplemouse" class="rouge-landing">
+        <div class="overlay-button">
+            <button class="rouge-button">Découvrir Le Rosé</button>
+        </div>
+</div>
+<!-- Fin du rosé -->
+
+
 {% endblock %}
