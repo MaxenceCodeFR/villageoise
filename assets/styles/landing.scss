@@ -2,9 +2,6 @@
 //NAVBAR CSS//
 //////////////
 
-.navbar{
-    z-index: 10;
-}
 .logo{
     max-width: 10em;
 }
@@ -14,6 +11,31 @@
     align-items: center;
     font-family: $font-family-nav;
     font-size: large;
+    .nav-item{
+        position: relative;
+        text-decoration: none;
+        :hover{
+            color: black;
+        }
+        ::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1.5px;
+            bottom: 0;
+            left: 0;
+            background-color: #4e7343;
+            transform: scaleX(0);
+            transition: transform 0.7s ease;
+        }
+        :hover::before{
+            transform: scaleX(1);
+        }
+        .nav-link{
+            color: black;
+            
+        }
+    }
 }
 
 .container-fluid {
@@ -25,10 +47,3 @@
 //LANDING CSS//
 ///////////////
 
-.video{
-    z-index: -1;
-    flex: 1;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover
-}
