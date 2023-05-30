@@ -9,7 +9,7 @@
         transform: translate(-50%, -50%);
         font-size: 2rem;
         font-family: $font-family-nav;
-        letter-spacing: 5px;
+        letter-spacing: 2px;
     }
 }
 
@@ -29,9 +29,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 5rem 35rem;
     gap: 2rem;
-    margin: 5rem 15rem;
-    padding: 3rem 3rem 3rem 3rem;
     font-family: $font-family-nav;
     position: relative;
     .rouge-landing{
