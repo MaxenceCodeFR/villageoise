@@ -1,49 +1,10 @@
-///////////////
-//NAVBAR CSS//
-//////////////
-
-.logo{
-    max-width: 10em;
+.img-landing{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.5);
 }
-
-.navbar-nav{
-    gap: 5rem;
-    align-items: center;
-    font-family: $font-family-nav;
-    font-size: large;
-    .nav-item{
-        position: relative;
-        text-decoration: none;
-        :hover{
-            color: black;
-        }
-        ::before{
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 1.5px;
-            bottom: 0;
-            left: 0;
-            background-color: #4e7343;
-            transform: scaleX(0);
-            transition: transform 0.7s ease;
-        }
-        :hover::before{
-            transform: scaleX(1);
-        }
-        .nav-link{
-            color: black;
-            
-        }
-    }
-}
-
-.container-fluid {
-    background:transparent;
-}
-
-
-////////////////
-//LANDING CSS//
-///////////////
-
