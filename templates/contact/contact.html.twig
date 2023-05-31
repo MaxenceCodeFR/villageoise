@@ -1,0 +1,40 @@
+{% extends "base.html.twig" %}
+{% block title %}Contactez-Nous{% endblock %}
+{% block body %}
+<div class="symfony">
+    Bonjour,<br> Veuillez nous dire pourquoi
+    <span {{ stimulus_controller('symfony/ux-typed', {
+        strings: ['vous aimez la Villageoise', 'elle est rafraichissante', 'on peut la consommer sans modération', 'elle est bonne et pas chère'],
+        loop:true,
+        cursorChar:'🍷'
+    }) }}></span>
+</div>
+<form class="contact">
+<div class="row">
+  <div class="col-4 form-floating">
+    <input type="text" class="form-control" id="floatingInput" placeholder="Prénom">
+    <label for="floatingInput">Prénom</label>
+  </div>
+  <div class="col-4 form-floating">
+    <input type="text" class="form-control" id="floatinInput" placeholder="Last name">
+    <label for="floatingInput">Nom</label>
+  </div>
+  <div class="col-4 form-floating">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Adresse Mail</label>
+  </div>
+</div>
+<div class="form-floating col-12">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+  <label for="floatingTextarea2">Votre Message</label>
+</div>
+<button>Envoyer</button>
+</form>
+
+<style>
+  footer {
+    display: none !important;
+  }
+</style>
+    
+{% endblock %}

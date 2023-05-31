@@ -1,9 +1,8 @@
-// body{
-//     background-image: url(/public/build/images/background.png);
-//     background-attachment: fixed;
-//     background-repeat: no-repeat;
-// }
-
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 //Amusement avec scroll bar
 ::-webkit-scrollbar {
     width: 7px;

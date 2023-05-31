@@ -1,0 +1,33 @@
+form{
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    font-family: $font-family-nav;
+    background-color: #4e734342;
+    border-radius: 1em;
+    button{
+        background-color: white;
+        padding:1rem;
+        color: #4e7343;
+        border: none;
+        &:hover{
+            transition: ease 0.5s;
+            background-color: #4e7343;
+            color: white;
+        }
+    }
+}
+
+.symfony{
+    margin-top: 2em;
+    font-family: $font-family-nav;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.svg-footer{
+    rotate: 20deg;
+}
