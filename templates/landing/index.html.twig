@@ -1,45 +1,63 @@
 {% extends "base.html.twig" %}
+{% block title %}La Villageoise - Bienvenue{% endblock %}
 {% block body %}
-    <div class="img-text">
-        <img src="{{ asset('images/grape.jpg') }}" alt="raisin" class="img-landing">
-        <p class="text-landing">Depuis 1992, nous prônons excellence et qualité. Aujourd'hui, que ce soit pour la cuisine ou un dîner, 
-            La Villageoise vous offre un moment d'exception. Partez à la découverte de notre gamme : plutôt Rouge, Blanc ou Rosé ; à vous de choisir !</p>
-    </div>
-        
+<div class="img-text">
+    <img src="{{ asset('images/grape.jpg') }}" alt="raisin" class="img-landing">
+    <p class="text-landing">Depuis 1992, nous prônons excellence et qualité. Aujourd'hui, que ce soit pour la cuisine ou un dîner, 
+        La Villageoise vous offre un moment d'exception. Partez à la découverte de notre gamme : plutôt Rouge, Blanc ou Rosé ; à vous de choisir !</p>
+</div>
+    
 <!-- Pour le rouge -->
-    <div class="wine" data-aos="fade-up"
-    data-aos-delay="600"
-    data-aos-duration="3000">
-            <img src="{{asset('images/swirl.png')}}" alt="fleche" class="swirl">
-            <h2>Le Rouge</h2>
-            <img src="{{ asset('images/rouge.webp') }}" alt="vin rouge" class="rouge-landing">
-        <div class="overlay-button">
-            <button class="rouge-button">Découvrir Le Rouge</button>
-        </div>
+<div class="wine">
+    <img src="{{asset('images/swirl.png')}}" alt="fleche" class="swirl">
+    <img src="{{asset('images/swirl.png')}}" alt="fleche" class="swirl2">
+    <p class="w-swirl">Corsé et Grenat</p>
+    <p class="w-swirl2">Avec une viande</p>
+    <h2>Le Rouge</h2>
+    <div data-aos="fade-up"
+        data-aos-delay="600"
+        data-aos-duration="3000">
+        <img src="{{ asset('images/rouge.webp') }}" alt="vin rouge" class="rouge-landing">
+    <div class="overlay-button">
+        <button class="rouge-button">Découvrir Le Rouge</button>
     </div>
+    </div>  
+</div>
 <!-- Fin du rouge -->
 
 <!-- Pour le blanc -->
-<div class="wine" data-aos="fade-up"
-data-aos-delay="600"
-data-aos-duration="3000">
+<div class="wine">
+    <img src="{{asset('images/swirl.png')}}" alt="fleche" class="swirl">
+    <img src="{{asset('images/swirl.png')}}" alt="fleche" class="swirl2">
+    <p class="w-swirl">Doux et Fruité</p>
+    <p class="w-swirl2">Avec un poisson</p>
     <h2>Le Blanc</h2>
+<div  data-aos="fade-up"
+        data-aos-delay="600"
+        data-aos-duration="3000">
     <img src="{{ asset('images/blanc.jpg') }}" alt="vin blanc" class="rouge-landing">
-        <div class="overlay-button">
-            <button class="rouge-button">Découvrir Le Blanc</button>
-        </div>
+<div class="overlay-button">
+    <button class="rouge-button">Découvrir Le Blanc</button>
+</div>
+</div>
 </div>
 <!-- Fin du blanc -->
 
 <!-- Pour le rosé -->
-<div class="wine" data-aos="fade-up"
-data-aos-delay="600"
-data-aos-duration="3000">
+<div class="wine">
+    <img src="{{asset('images/swirl.png')}}" alt="fleche" class="swirl">
+    <img src="{{asset('images/swirl.png')}}" alt="fleche" class="swirl2">
+    <p class="w-swirl">Frais et Fruité</p>
+    <p class="w-swirl2">Entre amis</p>
     <h2>Le Rosé</h2>
+<div data-aos="fade-up"
+    data-aos-delay="600"
+    data-aos-duration="3000">
     <img src="{{ asset('images/rose.webp') }}" alt="rosé pamplemouse" class="rouge-landing">
-        <div class="overlay-button">
-            <button class="rouge-button">Découvrir Le Rosé</button>
-        </div>
+    <div class="overlay-button">
+        <button class="rouge-button">Découvrir Le Rosé</button>
+    </div>
+</div>
 </div>
 <!-- Fin du rosé -->
 
