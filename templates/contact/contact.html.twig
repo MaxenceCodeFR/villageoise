@@ -1,14 +1,16 @@
 {% extends "base.html.twig" %}
 {% block title %}Contactez-Nous{% endblock %}
 {% block body %}
+
 <div class="symfony">
-    Bonjour,<br> Veuillez nous dire pourquoi
+    Veuillez nous dire pourquoi
     <span {{ stimulus_controller('symfony/ux-typed', {
         strings: ['vous aimez la Villageoise', 'elle est rafraichissante', 'on peut la consommer sans modération', 'elle est bonne et pas chère'],
         loop:true,
         cursorChar:'🍷'
     }) }}></span>
 </div>
+<div class="middle">
 <form class="contact">
 <div class="row">
   <div class="col-4 form-floating">
@@ -30,6 +32,16 @@
 </div>
 <button>Envoyer</button>
 </form>
+<div class="infos">
+    <p>Venez visité nos locaux</p>
+    <p>Adresse : 1 rue de la bière</p>
+    <p>Code Postal : 75000</p>
+    <p>Ville : Paris</p>
+    <p>Téléphone : 01 23 45 67 89</p>
+    <p>Mail : contac@villageoise.com</p>
+</div>
+</div>
+<div class="deco">kealekz</div>
 
 <style>
   footer {
