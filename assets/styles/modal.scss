@@ -1,0 +1,31 @@
+.modal{
+    font-family: $font-family-nav;
+    font-size: 1em;
+    .modal-header{
+        display: flex;
+        h1{
+            margin-left: auto;
+        }
+        
+    }
+    .modal-body{
+        color: #4e7343;
+    }
+    .modal-footer{
+        display: flex;
+        justify-content: space-around;
+        button{
+            background-color: white;
+            padding:1rem;
+            color: #4e7343;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            &:hover{
+                transition: ease 0.5s;
+                background-color: #4e7343;
+                color: white;
+            }
+        }
+    }
+}

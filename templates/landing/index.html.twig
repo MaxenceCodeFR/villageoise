@@ -19,7 +19,7 @@
         data-aos-duration="3000">
         <img src="{{ asset('images/rouge.webp') }}" alt="vin rouge" class="rouge-landing">
     <div class="overlay-button">
-        <button class="rouge-button">Découvrir Le Rouge</button>
+        <button class="rouge-button" data-bs-toggle="modal" data-bs-target="#modalLeRouge">Découvrir Le Rouge</button>
     </div>
     </div>  
 </div>
@@ -37,7 +37,7 @@
         data-aos-duration="3000">
     <img src="{{ asset('images/blanc.jpg') }}" alt="vin blanc" class="rouge-landing">
 <div class="overlay-button">
-    <button class="rouge-button">Découvrir Le Blanc</button>
+    <button class="rouge-button" data-bs-toggle="modal" data-bs-target="#modalLeBlanc">Découvrir Le Blanc</button>
 </div>
 </div>
 </div>
@@ -55,11 +55,83 @@
     data-aos-duration="3000">
     <img src="{{ asset('images/rose.webp') }}" alt="rosé pamplemouse" class="rouge-landing">
     <div class="overlay-button">
-        <button class="rouge-button">Découvrir Le Rosé</button>
+        <button class="rouge-button" data-bs-toggle="modal" data-bs-target="#modalLeRose">Découvrir Le Rosé</button>
     </div>
 </div>
 </div>
 <!-- Fin du rosé -->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!-- Modal Le Rouge -->
+<div class="modal fade" id="modalLeRouge" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-7" id="exampleModalLabel">Le Rouge</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Découvrez Le Rouge by La Villageoise, un vin d'exception qui saura enchanter vos sens et sublimer vos repas. Sa robe d'un rouge grenat profond attire immédiatement le regard, annonçant la richesse de ses saveurs.<br><br>
+        Ce vin captivant est le compagnon idéal des amateurs de viande. Son bouquet intense révèle des notes délicates de fruits noirs mûrs et d'épices, offrant une expérience olfactive unique. En bouche, Le Rouge révèle une structure harmonieuse, avec des tanins souples et élégants qui enrobent le palais.<br><br>
+        Que ce soit avec un filet de bœuf tendre, un magret de canard savoureux ou un rôti d'agneau fondant, Le Rouge by La Villageoise se marie à merveille avec la viande. Sa puissance maîtrisée s'accorde parfaitement avec les plats de caractère, apportant une dimension gustative incomparable.<br><br>
+        Ce vin incarne l'expression authentique du terroir. Issu de vignobles soigneusement sélectionnés et cultivés avec passion, chaque gorgée révèle l'essence même de son origine. Le Rouge by La Villageoise est l'aboutissement d'un savoir-faire ancestral, combinant tradition et innovation pour offrir un vin d'une qualité exceptionnelle.<br><br>
+        À chaque dégustation, laissez-vous transporter par l'équilibre subtil entre douceur et puissance, dans un mariage parfaitement exécuté. Le Rouge est un véritable symbole de convivialité et de partage, idéal pour accompagner vos moments privilégiés.<br><br>
+        En somme, Le Rouge by La Villageoise est un vin séduisant qui séduira les amateurs de viande. Son élégance, sa robe grenat envoûtante et ses arômes envoûtants font de lui le choix parfait pour sublimer vos repas et créer des souvenirs inoubliables. Dégustez-le avec passion et laissez-vous emporter par cette expérience gustative hors du commun.<br>
+      </div>
+      <div class="modal-footer">
+        <button data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Le Blanc -->
+<div class="modal fade" id="modalLeBlanc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-7" id="exampleModalLabel">Le Blanc</h1>
+        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Découvrez Le Blanc by La Villageoise, un vin d'une douceur enchanteresse et d'une richesse fruitée qui magnifiera vos dégustations de poissons. Sa robe d'un éclatant jaune pâle révèle dès le premier regard la fraîcheur et la délicatesse qui l'animent.<br><br>
+        Ce vin vous offre un voyage sensoriel unique, empreint de douceur et de saveurs exquises. Son nez délicieusement fruité dévoile des arômes subtils d'agrumes et de fruits tropicaux, invitant vos sens à une symphonie olfactive envoûtante. En bouche, Le Blanc révèle une harmonie parfaite entre sa douceur délicate et sa fraîcheur vibrante.<br><br>
+        Que ce soit avec une sole meunière, une dorade grillée ou un saumon poché, Le Blanc by La Villageoise s'accorde divinement avec le poisson. Sa palette aromatique fruitée et sa finesse gustative viennent sublimer les saveurs marines, créant une symbiose gustative inégalée.<br><br>
+        Ce vin incarne la passion et le savoir-faire des vignerons de La Villageoise. Les raisins sélectionnés avec soin et la vinification minutieuse donnent naissance à un nectar d'une qualité exceptionnelle. Le Blanc by La Villageoise allie tradition et modernité pour offrir un vin doux et fruité qui ravira les palais les plus exigeants.<br><br>
+        Laissez-vous envoûter par la fraîcheur et la douceur de Le Blanc, qui révèle l'expression la plus pure du terroir. Partagez-le avec vos proches lors de moments conviviaux et créez des souvenirs mémorables. Ce vin est une invitation à la dégustation et à la célébration des plaisirs simples de la vie.<br><br>
+        En somme, Le Blanc by La Villageoise est un vin doux et fruité qui se marie à merveille avec le poisson. Son équilibre parfait entre douceur et fraîcheur, sa robe lumineuse et ses arômes enchanteurs font de lui le choix idéal pour sublimer vos repas et créer des moments de délice pur. Savourez-le avec passion et laissez-vous porter par cette expérience gustative inoubliable.
+      </div>
+      <div class="modal-footer">
+        <button data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Le Rosé -->
+
+<div class="modal fade" id="modalLeRose" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-7" id="exampleModalLabel">Le Rosé</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Découvrez Le Rosé by La Villageoise, un vin rafraîchissant et fruité qui incarne à la perfection l'esprit convivial et festif des moments partagés entre amis. Sa robe rose pâle évoque l'élégance et la légèreté qui caractérisent ce vin d'exception.
+        Ce vin vous offre une véritable explosion de fraîcheur et d'arômes d'agrumes. Son bouquet enivrant dévoile des notes délicates de pamplemousse, de citron vert et de fruits rouges juteux, éveillant vos sens à une symphonie gustative pétillante. En bouche, Le Rosé révèle une vivacité délicate, accompagnée d'une finale rafraîchissante et désaltérante.<br><br>
+        Que ce soit pour une soirée en terrasse, un pique-nique au parc ou une réunion entre amis, Le Rosé by La Villageoise est le compagnon idéal. Sa fraîcheur et son caractère fruité en font une boisson polyvalente, capable de s'adapter à une grande variété de mets légers tels que les salades estivales, les fruits de mer ou les plats végétariens.<br><br>
+        Ce vin incarne la passion et le savoir-faire des vignerons de La Villageoise. Issu de vignobles sélectionnés avec soin et cultivés dans le respect de la tradition, Le Rosé by La Villageoise est le résultat d'un mariage parfait entre authenticité et modernité.<br><br>
+        Partagez ce vin avec vos amis, trinquez à la joie et à la complicité, et créez des souvenirs inoubliables. Le Rosé by La Villageoise est bien plus qu'une boisson, c'est une expérience de partage et de bonheur. Laissez-vous emporter par son charme pétillant et sa fraîcheur exquise.<br><br>
+        En somme, Le Rosé by La Villageoise est un vin frais et fruité, idéal pour les moments de convivialité entre amis. Sa robe rose séduisante, ses arômes d'agrumes envoûtants et sa vivacité en bouche font de lui le choix parfait pour sublimer vos rencontres et célébrer la vie. Dégustez-le avec passion et laissez-vous transporter par cette expérience gustative pétillante et mémorable.
+      </div>
+      <div class="modal-footer">
+        <button data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 {% endblock %}
