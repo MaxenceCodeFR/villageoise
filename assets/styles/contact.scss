@@ -7,10 +7,9 @@ form{
     align-items: center;
     gap: 1em;
     font-family: $font-family-nav;
-    background-color: rgb(103, 118, 98);
-    border-radius: 1em;
-    -webkit-box-shadow: 1px 8px 39px -1px rgba(0,0,0,0.78); 
-box-shadow: 1px 8px 39px -1px rgba(0,0,0,0.78);
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     button{
         background-color: white;
         padding:1rem;
@@ -23,42 +22,42 @@ box-shadow: 1px 8px 39px -1px rgba(0,0,0,0.78);
         }
     }
 }
-
+//Style Typed.js//
 .symfony{
     position: absolute;
-    right: 10;
-    top: 200;
     font-family: $font-family-nav;
     font-size: 1.5rem;
-    padding:3em;
+    margin:10em 0 0 5em;
 }
-
+//Footer svg//
 .deco{
     position:absolute;
     width: 100%;
-    background-color: #4e7343;;
     bottom: 0;
-    height: 30vh;
     z-index: -1;
-    color: #4e7343;
 }
-
+//Style partie contact droite//
 .infos{
-    background: rgb(110,161,105);
+    background: #ffffff;
     margin-right: 20rem;
-    -webkit-box-shadow: 1px 8px 39px -1px rgba(0,0,0,0.78); 
-box-shadow: 1px 8px 39px -1px rgba(0,0,0,0.78);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding: 1rem;
-    border-radius: 1em;
+    border-radius: 3px;
     font-family: $font-family-nav;
     font-size: larger;
     p{
-        color: white;
+        color: black;
+    }
+    .soc{
+        display: flex;
+        justify-content: space-around;
     }   
 }
-
+//Style des deux parties//
 .middle{
-    margin-top: 7rem;
+    margin-top: 20rem;
     display: flex;
     flex-direction: row;
 }
+
+
