@@ -1,0 +1,74 @@
+.supergrid {
+    margin-top: 80px;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "header-0 header-0 header-2"
+    "left main header-2"
+    "left footer-0-1 header-2";
+    grid-template-columns: 200px 1fr 400px;
+    grid-template-rows: 150px 233px 200px;
+    font-family: $font-family-nav;
+  }
+  
+  //Haut de la grid//
+  .header-0 {
+    grid-area: header-0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #95ab8e;
+    p{
+        font-size: 2em;
+        color: white;
+    }
+
+  }
+
+  //Image de la grid//
+  .header-2 {
+    grid-area: header-2;
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+  }
+
+  //Gauche de la grid//
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: left;
+    background-color: #46683c;
+    p{
+        color: white;
+        font-size: 2rem;
+        rotate: -90deg;
+        font-size: 4em;
+    }
+
+  }
+
+  //Milieu de la grid//
+  .main {
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    p{
+        font-size: 1em;
+        color: #46683c;
+        letter-spacing: 1px;
+    }
+
+//Partie Basse de la grid//
+  }
+  .footer-0-1 {
+    grid-area: footer-0-1;
+    background-color: #718f69;
+    color: #718f69;
+  }
