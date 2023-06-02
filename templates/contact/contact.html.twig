@@ -1,11 +1,11 @@
 {% extends "base.html.twig" %}
-{% block title %}Contactez-Nous{% endblock %}
+{% block title %}La Villageoise - Contactez-Nous{% endblock %}
 {% block body %}
 
 <div class="symfony">
-    Veuillez nous dire pourquoi
+    Dîtes-nous pourquoi
     <span {{ stimulus_controller('symfony/ux-typed', {
-        strings: ['vous aimez la Villageoise', 'elle est rafraichissante', 'on peut la consommer sans modération', 'elle est bonne et pas chère'],
+        strings: ['vous aimez La Villageoise', 'elle est rafraichissante', 'on peut la consommer sans modération', 'elle est savoureuse et peu onéreuse'],
         loop:true,
         cursorChar:'🍷'
     }) }}></span>
@@ -37,8 +37,8 @@
 <div class="infos" data-aos="fade-left"
                       data-aos-delay="400"
                       data-aos-duration="2000">
-    <p>Venez visité nos locaux</p>
-    <p>Adresse : 1 rue de la bière</p>
+    <p class="fw-bold">Envie de visiter nos locaux ? </p>
+    <p>Adresse : 1 rue de la Soif</p>
     <p>Code Postal : 75000</p>
     <p>Ville : Paris</p>
     <p>Téléphone : 01 23 45 67 89</p>
